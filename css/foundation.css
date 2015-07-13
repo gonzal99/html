@@ -44,6 +44,7 @@ html, body {
   height: 100%; }
 
 html {
+  overflow-x: hidden !important;
   box-sizing: border-box; }
 
 *,
@@ -78,7 +79,20 @@ img {
 
 img {
   -ms-interpolation-mode: bicubic; }
-
+.sections{
+  max-width: 100% !important;
+  color: #FFFFFF !important;
+  font-size: xx-large !important;
+}
+.section1 {
+  background-color: #007095 !important;
+}
+.section2{
+  background-color: #1cc7ff;
+}
+h1, .section1, .section2{
+  color: white !important;
+}
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
