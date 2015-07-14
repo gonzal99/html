@@ -54,7 +54,7 @@
 <?php
 $project = $_GET['project'];
 $query = "SELECT $project FROM projects";
-$result = $link->query($query);
+$result = $link->query($query ) or die("error ". mysqli_error($result));
 $result = mysqli_fetch_array($result);
 $projectName = $result[1];
 ?>
