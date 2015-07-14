@@ -59,7 +59,7 @@ $row = mysqli_fetch_array($result);
 $projectName = $row[1];
 ?>
 <div class="row">
-    <div class="large-12 column text-center">
+    <div class="large-12 column text-center panel">
         <h1><?php echo $projectName;?></h1>
     </div>
 </div>
