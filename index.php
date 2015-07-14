@@ -55,6 +55,14 @@
     <br>
     <br>
     <div class="large-offset-2">
+        <?php
+        $link = mysql_connect('localhost', 'public', 'XZmMSa7fZHfR5a8C');
+        if (!$link) {
+            die('Could not connect: ' . mysql_error());
+        }
+        echo 'Connected successfully';
+        mysql_close($link);
+        ?>
         <p>
             <?php
             for( $i=0; $i<5; $i++){
