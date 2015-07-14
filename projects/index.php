@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
@@ -53,13 +56,11 @@
 <br>
 <?php
 $project = $_GET['project'];
-echo $project;
 $query = "SELECT * FROM projects WHERE directory_name='project_1'";
-echo $query;
 $result = $link->query($query ) or die("error ". mysqli_error($result));
 $row = mysqli_fetch_array($result);
 $projectName = $row[1];
-echo $projectName;
+//$_SESSION['projectName']=$projectName;
 ?>
 <div class="row">
     <div class="large-12 column text-center">
