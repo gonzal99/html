@@ -57,6 +57,7 @@
     <div class="large-offset-2">
         <?php
         $link = mysqli_connect('localhost','public','XZmMSa7fZHfR5a8C','main') or die("error ". mysqli_error($link));
+
         ?>
         <p>
             <?php
