@@ -53,6 +53,7 @@
 <br>
 <?php
 $project = $_GET['project'];
+$link = mysqli_connect('localhost','public','XZmMSa7fZHfR5a8C','main') or die("error ". mysqli_error($link));
 $query = "SELECT $project FROM projects";
 $result = $link->query($query ) or die("error ". mysqli_error($result));
 $result = mysqli_fetch_array($result);
