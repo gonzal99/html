@@ -32,7 +32,7 @@
                     $query = "SELECT * FROM projects";
                     $result = $link->query($query);
                     while($row = mysqli_fetch_array($result)){
-                        echo "<li><a href='$row[3]'>$row[1]</a></li>";
+                        echo "<li><a href='?project=$row[4]'>$row[1]</a></li>";
                     }
                     ?>
                 </ul>
@@ -87,21 +87,6 @@
     </div>
 
 </div>
-<!--<div class="row" data-equalizer data-equalizer-mq="large-up">
-    <div></div>
-    &lt;!&ndash;<div class="large-2 large-pull-1 column panel large-text-center" data-equalizer-watch>
-
-    </div>
-    <div class="large-12 column panel" data-equalizer-watch>
-        <ul class="side-nav">
-            <h3>Quick Links</h3>
-            <li><a href="#">Quick Link 1</a></li>
-            <li><a href="#">Quick Link 2</a></li>
-            <li><a href="#">Quick Link 3</a></li>
-            <li><a href="#">Quick Link 4</a></li>
-        </ul>
-    </div>&ndash;&gt;
-</div>-->
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
 <script>

@@ -59,49 +59,6 @@
 </div>
 <br>
 
-<div class="row section1 sections">
-
-    <div class="large-offset-1 column left-align">
-        <h1>About</h1>
-    </div>
-
-    <div class="large-offset-2">
-
-    </div>
-
-</div>
-<div class="row section2 sections">
-    <div class="large-offset-1 column left-align">
-        <h1>What we do...</h1>
-    </div>
-
-    <div class="large-offset-2">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis suscipit sagittis. Quisque posuere
-            massa elit, sed gravida arcu suscipit id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Maecenas ac augue ut ex ultricies varius sit amet sit amet lorem. In at dui
-            dignissim, fringilla elit eu, accumsan libero. Sed porttitor sollicitudin arcu, nec aliquam urna luctus ac.
-            Integer vestibulum, augue ut volutpat bibendum, massa nibh viverra turpis, ut fermentum sapien felis vitae
-            ligula. Donec in mattis quam. Etiam tincidunt tempus est in viverra.
-        </p>
-    </div>
-
-</div>
-<!--<div class="row" data-equalizer data-equalizer-mq="large-up">
-    <div></div>
-    &lt;!&ndash;<div class="large-2 large-pull-1 column panel large-text-center" data-equalizer-watch>
-
-    </div>
-    <div class="large-12 column panel" data-equalizer-watch>
-        <ul class="side-nav">
-            <h3>Quick Links</h3>
-            <li><a href="#">Quick Link 1</a></li>
-            <li><a href="#">Quick Link 2</a></li>
-            <li><a href="#">Quick Link 3</a></li>
-            <li><a href="#">Quick Link 4</a></li>
-        </ul>
-    </div>&ndash;&gt;
-</div>-->
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
 <script>
