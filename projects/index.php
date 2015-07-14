@@ -54,10 +54,10 @@
 <?php
 $project = $_GET['project'];
 echo $project;
-$link = mysqli_connect('localhost','public','XZmMSa7fZHfR5a8C','main') or die("error ". mysqli_error($link));
 $query = "SELECT '$project' FROM projects";
 $result = $link->query($query ) or die("error ". mysqli_error($result));
 $projectName = $result[1];
+echo $projectName;
 ?>
 <div class="row">
     <div class="large-12 column text-center">
