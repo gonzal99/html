@@ -56,12 +56,7 @@
     <br>
     <div class="large-offset-2">
         <?php
-        $link = mysql_connect('localhost', 'public', 'XZmMSa7fZHfR5a8C');
-        if (!$link) {
-            die('Could not connect: ' . mysql_error());
-        }
-        echo 'Connected successfully';
-        mysql_close($link);
+        $link = mysqli_connect('localhost','public','XZmMSa7fZHfR5a8C','main') or die("error ". mysqli_error($link));
         ?>
         <p>
             <?php
