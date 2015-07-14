@@ -32,7 +32,7 @@
                     $query = "SELECT * FROM projects";
                     $result = $link->query($query);
                     while($row = mysqli_fetch_array($result)){
-                        echo "<li><a href='$row[3]'>$row[1]</a></li>";
+                        echo "<li><a href='?project=$row[4]'>$row[1]</a></li>";
                     }
                     ?>
                 </ul>
@@ -51,7 +51,18 @@
     </section>
 </nav>
 <br>
-
+<?php
+$project = $_GET['project'];
+$query = "SELECT $project FROM projects";
+$result = $link->query($query);
+$result = mysqli_fetch_array($result);
+$projectName = $result[1];
+?>
+<div class="row">
+    <div class="large-12 column text-center">
+        <h1><?php echo $projectName?></h1>
+    </div>
+</div>
 <script src="../js/vendor/jquery.js"></script>
 <script src="../js/foundation.min.js"></script>
 <script>
