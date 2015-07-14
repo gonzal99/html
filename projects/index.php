@@ -53,7 +53,7 @@
 <br>
 <?php
 $project = $_GET['project'];
-$query = "SELECT * FROM projects WHERE directory_name='project_1'";
+$query = "SELECT * FROM projects WHERE directory_name='$project'";
 $result = $link->query($query ) or die("error ". mysqli_error($result));
 $row = mysqli_fetch_array($result);
 $projectName = $row[1];
