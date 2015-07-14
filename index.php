@@ -59,7 +59,9 @@
         $link = mysqli_connect('localhost','public','XZmMSa7fZHfR5a8C','main') or die("error ". mysqli_error($link));
         $query = "SELECT 1 FROM projects";
         $result = $link->query($query);
-        echo $result[1];
+        while($row = mysqli_fetch_array($result)){
+            echo $row["id"]."<br>";
+        }
         ?>
         <p>
             <?php
