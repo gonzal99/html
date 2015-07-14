@@ -60,7 +60,7 @@ $projectName = $result[1];
 ?>
 <div class="row">
     <div class="large-12 column text-center">
-        <h1><?php echo $projectName?></h1>
+        <h1><?php echo $projectName;?></h1>
     </div>
 </div>
 <script src="../js/vendor/jquery.js"></script>
