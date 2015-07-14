@@ -57,7 +57,7 @@
     <div class="large-offset-2">
         <?php
         $link = mysqli_connect('localhost','public','XZmMSa7fZHfR5a8C','main') or die("error ". mysqli_error($link));
-        $query = "SELECT 1 FROM projects";
+        $query = "SELECT * FROM projects";
         $result = $link->query($query);
         while($row = mysqli_fetch_array($result)){
             echo $row["id"]."<br>";
