@@ -32,7 +32,7 @@
                     $query = "SELECT * FROM projects";
                     $result = $link->query($query);
                     while($row = mysqli_fetch_array($result)){
-                        echo "<li><a href='?project=$row[4]'>$row[1]</a></li>";
+                        echo "<li><a href='projects/?project=$row[4]'>$row[1]</a></li>";
                     }
                     ?>
                 </ul>
