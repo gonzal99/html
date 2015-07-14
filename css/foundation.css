@@ -90,9 +90,7 @@ img {
 .section2{
   background-color: #1cc7ff;
 }
-h1, .section1, .section2{
-  color: white !important;
-}
+
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
