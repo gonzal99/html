@@ -57,7 +57,8 @@ echo $project;
 $query = "SELECT * FROM projects WHERE directory_name='project_1'";
 echo $query;
 $result = $link->query($query ) or die("error ". mysqli_error($result));
-$projectName = $result[1];
+$row = mysqli_fetch_array($result);
+$projectName = $row[1];
 echo $projectName;
 ?>
 <div class="row">
