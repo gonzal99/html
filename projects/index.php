@@ -71,12 +71,7 @@ $contributors = $link->query($contQuery) or die("error".mysqli_error($contributo
         <p><?php
             echo "By: ";
             while($row = mysqli_fetch_array($contributors)){
-              echo  $row[1];
-                if($row = $row -1){
-                    echo "$nbsp;";
-                }else{
-                    echo ",&nbsp;";
-                }
+              echo  $row[1].",&nbsp;";
             }
 
             ?></p>
