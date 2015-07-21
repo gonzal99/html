@@ -106,7 +106,7 @@ $contributors = $link->query($contQuery) or die("error".mysqli_error($contributo
     <div class="large-12 column text-center">
         <p><a href="<?php
             echo $projectPath;
-            ?>"<?php
+            ?>"><?php
                 echo $projectPath;
             ?></a></p>
     </div>
