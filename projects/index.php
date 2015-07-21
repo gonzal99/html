@@ -65,8 +65,8 @@ $projectFinal = $row[8];
 $contQuery = "SELECT * FROM contributors WHERE id='$projectId'";
 $contributors = $link->query($contQuery) or die("error".mysqli_error($contributors));
 ?>
-<div class="row">
-    <div class="large-12 column text-center panel">
+<div class="row panel">
+    <div class="large-12 column text-center ">
         <h1><?php echo $projectName;?></h1>
         <p><?php
             echo "By: ";
@@ -74,7 +74,33 @@ $contributors = $link->query($contQuery) or die("error".mysqli_error($contributo
               echo  $row[1]."&nbsp;";
 
             }
+
             ?></p>
+    </div>
+    <div class="large-4 column">
+        <p>Date: &nbsp;
+        <?php
+            echo $projectDate;
+        ?>
+        </p>
+    </div>
+    <div class="large-4 column">
+        <p>Version: &nbsp;
+            <?php
+            echo $projectVersion;
+            ?>
+        </p>
+    </div>
+    <div class="large-4 column">
+        <p>Final Version: &nbsp;
+            <?php
+            if($projectFinal==1){
+                echo "Yes";
+            }else{
+                echo "No";
+            }
+            ?>
+        </p>
     </div>
 </div>
 <script src="../js/vendor/jquery.js"></script>
