@@ -56,11 +56,23 @@ $project = $_GET['project'];
 $query = "SELECT * FROM projects WHERE directory_name='$project'";
 $result = $link->query($query ) or die("error ". mysqli_error($result));
 $row = mysqli_fetch_array($result);
+$projectId = $row[0];
 $projectName = $row[1];
+$projectDesc = $row[5];
+$projectDate = $row[6];
+$projectVersion = $row[7];
+$projectFinal = $row[8];
+$contQuery = "SELECT * FROM contributors WHERE id='$projectId'";
+$contributors = $link->query($contQuery) or die("error".mysqli_error($contributors));
 ?>
 <div class="row">
     <div class="large-12 column text-center panel">
         <h1><?php echo $projectName;?></h1>
+        <p><?php
+            while($row = mysqli_fetch_array($contributors)){
+                echo $row[1];
+            }
+            ?></p>
     </div>
 </div>
 <script src="../js/vendor/jquery.js"></script>
