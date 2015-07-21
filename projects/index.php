@@ -70,7 +70,8 @@ $contributors = $link->query($contQuery) or die("error".mysqli_error($contributo
         <h1><?php echo $projectName;?></h1>
         <p><?php
             while($row = mysqli_fetch_array($contributors)){
-                echo $row[1];
+                echo "By: ".$row[1]."\n";
+
             }
             ?></p>
     </div>
