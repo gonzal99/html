@@ -77,21 +77,21 @@ $contributors = $link->query($contQuery) or die("error".mysqli_error($contributo
 
             ?></p>
     </div>
-    <div class="large-4 column">
+    <div class="large-4 column text-center">
         <p>Date: &nbsp;
         <?php
             echo $projectDate;
         ?>
         </p>
     </div>
-    <div class="large-4 column">
+    <div class="large-4 column text-center">
         <p>Version: &nbsp;
             <?php
             echo $projectVersion;
             ?>
         </p>
     </div>
-    <div class="large-4 column">
+    <div class="large-4 column text-center">
         <p>Final Version: &nbsp;
             <?php
             if($projectFinal==1){
