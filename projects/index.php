@@ -69,8 +69,9 @@ $contributors = $link->query($contQuery) or die("error".mysqli_error($contributo
     <div class="large-12 column text-center panel">
         <h1><?php echo $projectName;?></h1>
         <p><?php
+            echo "By: ";
             while($row = mysqli_fetch_array($contributors)){
-                echo "By: ".$row[1]."\n";
+              echo  $row[1]."&nbsp;";
 
             }
             ?></p>
