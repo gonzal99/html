@@ -58,6 +58,7 @@ $result = $link->query($query ) or die("error ". mysqli_error($result));
 $row = mysqli_fetch_array($result);
 $projectId = $row[0];
 $projectName = $row[1];
+$projectPath = $row[3];
 $projectDesc = $row[5];
 $projectDate = $row[6];
 $projectVersion = $row[7];
@@ -100,6 +101,14 @@ $contributors = $link->query($contQuery) or die("error".mysqli_error($contributo
             }
             ?>
         </p>
+    </div>
+    <br>
+    <div class="large-12 column text-center">
+        <p><a href="<?php
+            echo $projectPath;
+            ?>"<?php
+                echo $projectPath;
+            ?></a></p>
     </div>
     <div class="large-12 column">
         <p><?php
