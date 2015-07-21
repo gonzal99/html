@@ -101,7 +101,7 @@ $contributors = $link->query($contQuery) or die("error".mysqli_error($contributo
             ?>
         </p>
     </div>
-    <div class="large-offset-1 large-10 column">
+    <div class="large-10 column">
         <p><?php
             echo $projectDesc;
             ?></p>
