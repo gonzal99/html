@@ -46,7 +46,7 @@
 <br>
 
 <div class="row">
-    <div class="large-12 column large-centered">
+    <div class="large-12 column" align="center">
         <a href="login.php" class="button">Login</a>
     </div>
 </div>
