@@ -39,10 +39,10 @@
                     <button id="no">No</button>
                 </div>
             </div>
-            <div class="row" id="reg">
+            <div class="row" id="reg" style="display:none">
                 <p>reg</p>
             </div>
-            <div class="row" id="nreg">
+            <div class="row" id="nreg" style="display:none">
                 <p>nreg</p>
             </div>
         </section>
