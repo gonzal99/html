@@ -21,10 +21,10 @@
             <li class="has-dropdown"><a href="#">Projects</a>
                 <ul class="dropdown">
                     <?php
-                    $link = mysqli_connect('localhost','public','XZmMSa7fZHfR5a8C','main') or die("error ". mysqli_error($link));
+                    $link = mysqli_connect('localhost', 'public', 'XZmMSa7fZHfR5a8C', 'main') or die("error " . mysqli_error($link));
                     $query = "SELECT * FROM projects";
                     $result = $link->query($query);
-                    while($row = mysqli_fetch_array($result)){
+                    while ($row = mysqli_fetch_array($result)) {
                         echo "<li><a href='?project=$row[4]'>$row[1]</a></li>";
                     }
                     ?>
@@ -44,8 +44,11 @@
     </section>
 </nav>
 <br>
-<div class="large-12 column large-centered">
-    <a href="login.php" class="button">Login</a>
+
+<div class="row">
+    <div class="large-12 column large-centered">
+        <a href="login.php" class="button">Login</a>
+    </div>
 </div>
 <script src="../../js/vendor/jquery.js"></script>
 <script src="../../js/foundation.min.js"></script>
