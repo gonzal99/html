@@ -15,7 +15,7 @@
                 <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
             </section>
             <section class="right tab-bar-section">
-                <h1 class="title">PlexWire</h1>
+                <h1 class="title"><a href="index.php">PlexWire</a></h1>
             </section>
         </nav>
         <aside class="left-off-canvas-menu">
@@ -27,7 +27,9 @@
                 <li><a href="#">Item 4</a></li>
             </ul>
         </aside>
-
+        <section class="main-section">
+            <!-- content goes here -->
+        </section>
         <a class="exit-off-canvas"></a>
     </div>
 </div>
