@@ -48,8 +48,7 @@ $project = $_GET['project'];
 if($project == null){
     $project = "mmserver";
 }
-$query = "SELECT * FROM projects WHERE directory_name='$
-roject'";
+$query = "SELECT * FROM projects WHERE directory_name='$project'";
 $result = $link->query($query ) or die("error ". mysqli_error($result));
 $row = mysqli_fetch_array($result);
 $projectId = $row[0];
