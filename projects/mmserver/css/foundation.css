@@ -70,8 +70,18 @@ html {
 
 html,
 body {
-    background: linear-gradient(0deg, #283048 10%, #859398 90%) no-repeat;
-    background: -webkit-linear-gradient(0deg, #283048 10%, #859398 90%) no-repeat;
+    background-image: -webkit-gradient(
+            linear,
+            right bottom,
+            right top,
+            color-stop(0, #292021),
+            color-stop(1, #EDE4E5)
+    );
+    background-image: -o-linear-gradient(top, #292021 0%, #EDE4E5 100%);
+    background-image: -moz-linear-gradient(top, #292021 0%, #EDE4E5 100%);
+    background-image: -webkit-linear-gradient(top, #292021 0%, #EDE4E5 100%);
+    background-image: -ms-linear-gradient(top, #292021 0%, #EDE4E5 100%);
+    background-image: linear-gradient(to top, #292021 0%, #EDE4E5 100%);
     font-size: 100%;
 }
 
