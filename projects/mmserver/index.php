@@ -28,16 +28,28 @@
             </ul>
         </aside>
         <section class="main-section">
-            THE PSYCHOHISTORIANS
-
-            Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.
-
-            Using psychohistory, Seldon has discovered the declining nature of the Empire, angering the aristocratic members of the Committee of Public Safety, the de facto rulers of the Empire. The Committee considers Seldon's views and statements treasonous, and he is arrested along with young mathematician Gaal Dornick, who has arrived on Trantor to meet Seldon. Seldon is tried by the Committee and defends his beliefs, explaining his theories and predictions, including his belief that the Empire will collapse in 500 years and enter a 30,000-year dark age, to the Committee's members.
+            <div class="row panel" align="center">
+                <div class="large-12 column" id="question">
+                    <p>Are you already registered?</p>
+                </div>
+                <div class="large-6 column">
+                    <button id="yes">Yes</button>
+                </div>
+                <div class="large-6 column">
+                    <button id="no">No</button>
+                </div>
+            </div>
+            <div class="row" id="reg">
+                <p>reg</p>
+            </div>
+            <div class="row" id="nreg">
+                <p>nreg</p>
+            </div>
         </section>
         <a class="exit-off-canvas"></a>
     </div>
 </div>
-
+<script src="js/displayHelper.js"></script>
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
 <script>
