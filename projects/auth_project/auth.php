@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Projects</title>
+    <title>Auth Project</title>
     <link rel="stylesheet" href="../../css/foundation.css"/>
     <script src="../../js/vendor/modernizr.js"></script>
 </head>
@@ -11,20 +11,13 @@
 <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
         <li class="name">
-            <h1><a href="../index.php">Project 1</a></h1>
+            <h1><a href="../index.php">3volution</a></h1>
         </li>
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
     <section class="top-bar-section">
         <ul class="right">
-            <li><a href="#">Menu Item 1</a></li>
-            <li class="has-dropdown"><a href="#">Tools</a>
-                <ul class="dropdown">
-                    <li><a href="#">Submenu Item 1</a></li>
-                    <li><a href="#">Submenu Item 2</a></li>
-                    <li><a href="#">Submenu Item 3</a></li>
-                </ul>
-            </li>
+            
             <li class="has-dropdown"><a href="#">Projects</a>
                 <ul class="dropdown">
                     <?php

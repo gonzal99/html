@@ -17,14 +17,6 @@
     </ul>
     <section class="top-bar-section">
         <ul class="right">
-            <li><a href="#">Menu Item 1</a></li>
-            <li class="has-dropdown"><a href="#">Tools</a>
-                <ul class="dropdown">
-                    <li><a href="#">Submenu Item 1</a></li>
-                    <li><a href="#">Submenu Item 2</a></li>
-                    <li><a href="#">Submenu Item 3</a></li>
-                </ul>
-            </li>
             <li class="has-dropdown"><a href="#">Projects</a>
                 <ul class="dropdown">
                     <?php
