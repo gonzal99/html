@@ -1,4 +1,4 @@
 Authtype Basic
-Authname "roberto"
+Authname "You need to login to access this project."
 AuthUserFile /var/www/html/projects/mmserver/.htpasswd
 Require valid-user
