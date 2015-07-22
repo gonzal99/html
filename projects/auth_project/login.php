@@ -14,8 +14,10 @@
     </div>
     <form action="verify.php" data-abide>
         <div class="name-field">
-            <label>Username<small>required</small></label>
+            <label>Username<small>required</small>
             <input type="alpha_numeric" required>
+            </label>
+            <small class="error">Username cannot contain symbols</small>
         </div>
     </form>
 </div>
