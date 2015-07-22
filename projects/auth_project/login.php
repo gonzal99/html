@@ -30,7 +30,7 @@
         </div>
         <?php
         $bad = $_GET['badattempt'];
-        if($bad == 1){
+        if($bad == "1"){
             echo "<small class=\"error\">Bad username or Password, please try again.</small>";
         }
         ?>
