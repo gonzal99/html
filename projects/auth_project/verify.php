@@ -12,5 +12,5 @@ $correctuname = "roberto";
 $correctPassword = "password";
 if($uname != $correctuname || $pw != $correctPassword){
     $_SESSION['badUserPassword'] = 1;
-    Location("login.php");
+    header('Location: login.php');
 }
