@@ -44,10 +44,10 @@
                 </div>
             </div>
             <div class="row" id="reg" style="display:none">
-                <p>reg</p>
+                <form
             </div>
             <div class="row" id="nreg" style="display:none">
-                <p>nreg</p>
+
             </div>
         </section>
         <a class="exit-off-canvas"></a>
