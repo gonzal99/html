@@ -34,6 +34,7 @@
             echo "<small class=\"error\">Bad username or Password, please try again.</small>";
         }
         ?>
+        <button type="submit">Submit</button>
     </form>
 </div>
 <script src="../../js/vendor/jquery.js"></script>
