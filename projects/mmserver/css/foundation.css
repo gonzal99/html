@@ -72,7 +72,6 @@ html,
 body {
     background: linear-gradient(0deg, #283048 10%, #859398 90%) no-repeat;
     background: -webkit-linear-gradient(0deg, #283048 10%, #859398 90%) no-repeat;
-    background-size: cover;
     font-size: 100%;
 }
 
