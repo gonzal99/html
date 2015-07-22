@@ -6,6 +6,7 @@
     <title>mmserver</title>
     <link rel="stylesheet" href="css/foundation.css"/>
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/displayHelper.js"></script>
 </head>
 <body>
 <div class="off-canvas-wrap" data-offcanvas>
@@ -49,7 +50,7 @@
         <a class="exit-off-canvas"></a>
     </div>
 </div>
-<script src="js/displayHelper.js"></script>
+
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
 <script>
