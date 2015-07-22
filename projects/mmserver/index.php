@@ -8,13 +8,17 @@
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/displayHelper.js"></script>
     <script>
-        $('#yes').on('click',function(){
-            $('#question').hide('slow');
-            $('#reg').show('slow');
+        $(document).ready(function () {
+            $('#yes').on('click', function () {
+                $('#question').hide('slow');
+                $('#reg').show('slow');
+            });
         });
-        $('#no').on('click',function(){
-            $('#question').hide('slow');
-            $('#nreg').show('slow');
+        $(document).ready(function () {
+            $('#no').on('click', function () {
+                $('#question').hide('slow');
+                $('#nreg').show('slow');
+            });
         });
     </script>
 </head>
