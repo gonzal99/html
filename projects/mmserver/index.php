@@ -6,6 +6,7 @@
     <title>mmserver</title>
     <link rel="stylesheet" href="css/foundation.css"/>
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
     <script src="js/displayHelper.js"></script>
     <script>
         $(document).ready(function () {
@@ -65,7 +66,7 @@
     </div>
 </div>
 
-<script src="js/vendor/jquery.js"></script>
+
 <script src="js/foundation.min.js"></script>
 <script>
     $(document).foundation();
