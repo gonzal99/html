@@ -45,7 +45,7 @@
 </nav>
 <br>
 <div class="large-12 column large-centered">
-    <button><a href="login.php">Login</a></button>
+    <a href="login.php" class="button">Login</a>
 </div>
 <script src="../../js/vendor/jquery.js"></script>
 <script src="../../js/foundation.min.js"></script>
