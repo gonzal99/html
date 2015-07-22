@@ -56,8 +56,8 @@ html, body {
 }
 
 html {
-    height: 100%;
     box-sizing: border-box;
+
 }
 
 *,
@@ -70,7 +70,9 @@ html {
 
 html,
 body {
-
+    background: linear-gradient(180deg, #283048 10%, #859398 90%) no-repeat;
+    background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%) no-repeat;
+    background-size: cover;
     font-size: 100%;
 }
 
