@@ -30,6 +30,8 @@
             </ul>
         </aside>
         <section class="main-section">
+            <br>
+            <br>
             <div class="row panel" align="center" id="question">
                 <div class="large-12 column">
                     <p>Are you already registered?</p>
