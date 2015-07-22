@@ -8,20 +8,6 @@
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/displayHelper.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#yes').on('click', function () {
-                $('#question').hide('slow');
-                $('#reg').show('slow');
-            });
-        });
-        $(document).ready(function () {
-            $('#no').on('click', function () {
-                $('#question').hide('slow');
-                $('#nreg').show('slow');
-            });
-        });
-    </script>
 </head>
 <body>
 <div class="off-canvas-wrap" data-offcanvas>
@@ -44,8 +30,8 @@
             </ul>
         </aside>
         <section class="main-section">
-            <div class="row panel" align="center">
-                <div class="large-12 column" id="question">
+            <div class="row panel" align="center" id="question">
+                <div class="large-12 column">
                     <p>Are you already registered?</p>
                 </div>
                 <div class="large-6 column">
