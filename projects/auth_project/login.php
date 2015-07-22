@@ -9,9 +9,15 @@
 </head>
 <body>
 <div class="row">
-    <div class="large-12 column panel">
-
+    <div class="large-12 column panel text-center">
+        <h1>Please login:</h1>
     </div>
+    <form action="verify.php" data-abide>
+        <div class="name-field">
+            <label>Username<small>required</small></label>
+            <input type="alpha_numeric" required>
+        </div>
+    </form>
 </div>
 <script src="../../js/vendor/jquery.js"></script>
 <script src="../../js/foundation.min.js"></script>
