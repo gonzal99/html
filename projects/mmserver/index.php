@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="css/foundation.css"/>
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/displayHelper.js"></script>
+    <script>
+        $('#yes').on('click',function(){
+            $('#question').hide('slow');
+            $('#reg').show('slow');
+        });
+        $('#no').on('click',function(){
+            $('#question').hide('slow');
+            $('#nreg').show('slow');
+        });
+    </script>
 </head>
 <body>
 <div class="off-canvas-wrap" data-offcanvas>
