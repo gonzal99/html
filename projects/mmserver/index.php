@@ -24,6 +24,9 @@
                 <li><a href="#">Item 4</a></li>
             </ul>
         </aside>
+        <section class="right tab-bar-section">
+            <h1 class="title">PlexWire</h1>
+        </section>
         <a class="exit-off-canvas"></a>
     </div>
 </div>
