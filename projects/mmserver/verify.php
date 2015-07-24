@@ -14,8 +14,8 @@ $result = $link->query($query) or die("bad data");
 $userData = mysqli_fetch_array($result);
 $hashedPassword = hash("sha512",$password);
 if($userData[3]==$hashedPassword){
-    echo "Please wait...";
     $_SESSION['username']=$username;
+    echo "success.php?";
 }else{
     echo "Please try again!";
     echo " ".$password." ";

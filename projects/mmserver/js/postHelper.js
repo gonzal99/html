@@ -7,15 +7,18 @@ function post(){
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     var vars = "username="+username+"&password="+password;
+    var returnLink = "";
     hr.open("POST",url,true);
     hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     hr.onreadystatechange = function(){
         if(hr.readyState == 4 && hr.status == 200){
             var return_data = hr.responseText;
-            document.getElementById("status").innerHTML = return_data;
+            document.getElementById("status").innerHTML = returnLink =  return_data ;
         }
     };
     hr.send(vars);
-    document.getElementById("status").innerHTML = "processing...";
-    window.location.replace("https://3volution.io/projects/mmserver/success.php");
+    if(!returnLink.charAt(returnLink.length)=='?'){
+        window.location.replace(returnLink);
+    }
+
 }
