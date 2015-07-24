@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * Created by PhpStorm.
  * User: gonzal99
@@ -13,7 +14,9 @@ $result = $link->query($query) or die("bad data");
 $userData = mysqli_fetch_array($result);
 $hashedPassword = hash("sha512",$password);
 if($userData[3]==$hashedPassword){
-    header("Location: success.php");
+    echo "Please wait...";
+    $_SESSION['username']=$username;
+    echo $_SESSION['username'];
 }else{
     echo "Please try again!";
     echo " ".$password." ";
