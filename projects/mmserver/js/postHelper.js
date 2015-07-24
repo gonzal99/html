@@ -6,7 +6,7 @@ function post(){
     var url = "verify.php";
     var fName = document.getElementById("fName").value;
     var password = document.getElementById("password").value;
-    var vars = "firstname="+fName+"&password"+password;
+    var vars = "firstname="+fName+"&password="+password;
     hr.open("POST",url,true);
     hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     hr.onreadystatechange = function(){
