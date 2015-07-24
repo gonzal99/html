@@ -8,6 +8,7 @@
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/displayHelper.js"></script>
+    <script src="js/postHelper.js"></script>
 </head>
 <body>
 <div class="off-canvas-wrap" data-offcanvas>
@@ -44,7 +45,22 @@
                 </div>
             </div>
             <div class="row" id="reg" style="display:none">
-                <form
+                <form name="loginform">
+                    <div class="large-6 large-offset-6 column">
+                        <label>Username</label>
+                        <input type="text" name="fName" id="fName">
+                    </div>
+                    <div class="large-6 large-offset-6 column">
+                        <label>Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="large-offset-4 large-4 large-offset-4 column">
+                        <button type="button" class="button" onclick="post();">Submit</button>
+                    </div>
+                    <div class="large-12 column text-center">
+                        <label id="status"></label>
+                    </div>
+                </form>
             </div>
             <div class="row" id="nreg" style="display:none">
 
