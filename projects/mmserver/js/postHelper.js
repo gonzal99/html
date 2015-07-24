@@ -14,7 +14,7 @@ function post(){
         if(hr.readyState == 4 && hr.status == 200){
             returnLink = hr.responseText;
             if(parseInt(returnLink)==1){
-                window.location.replace("success.php");
+                window.location.replace("index.php");
             }else{
                 document.getElementById("status").innerHTML = "please try again";
             }

@@ -24,10 +24,31 @@
         <aside class="left-off-canvas-menu">
             <ul class="off-canvas-list">
                 <li><label>Menu</label></li>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
+                <?php
+                $link = mysqli_connect('localhost','public','XZmMSa7fZHfR5a8C','mmserver') or die("error ". mysqli_error($link));
+                $username = $_SESSION['username'];
+                $user_status = 0;
+                if($username != null){
+                    $query = "SELECT * FROM clients WHERE username='$username'";
+                    $result = $link->query($query) or die("bad data");
+                    $userData = mysqli_fetch_array($result);
+                    $user_status = $userData[4];
+                }
+                echo "<li><a href='#'>Donate</a></li> ";
+                if($user_status == 1){
+                    echo "<li><a href='#'>Media Request</a></li> ";
+                }else{
+                    echo "<li><a href='#'>Sign Up</a></li> ";
+                    echo "<li><a href='#'>Donate</a></li> ";
+                }
+                ?>
+                <?php
+                if(isset($_SESSION['username'])){
+                    echo "<li><label>Account</label></li>
+                <li><a href=\"logout.php\"></a></li>";
+                }
+                ?>
+
             </ul>
         </aside>
         <section class="main-section">
