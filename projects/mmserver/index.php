@@ -49,13 +49,13 @@
                 <form name="loginform">
                     <div class="row">
                         <div class="large-6 column">
-                            <label>Username</label>
+                            <label style="color: black !important;>Username</label>
                             <input type="text" name="username" id="username">
                         </div>
                     </div>
                     <div class="row">
                         <div class="large-6 column">
-                            <label>Password</label>
+                            <label style="color: black !important;">Password</label>
                             <input type="password" name="password" id="password">
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                     </div>
                 </form>
                 <div class="large-12 column text-center">
-                    <label id="status"></label>
+                    <label id="status" style="color: black !important;></label>
                 </div>
             </div>
 
