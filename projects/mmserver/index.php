@@ -46,11 +46,11 @@
             </div>
             <div class="row" id="reg" style="display:none">
                 <form name="loginform">
-                    <div class="large-6 large-offset-6 column">
+                    <div class="large-6 large-push-6 column">
                         <label>Username</label>
                         <input type="text" name="username" id="username">
                     </div>
-                    <div class="large-6 large-offset-6 column">
+                    <div class="large-6 column">
                         <label>Password</label>
                         <input type="password" name="password" id="password">
                     </div>
