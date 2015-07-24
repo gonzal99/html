@@ -48,7 +48,7 @@
                 <form name="loginform">
                     <div class="large-6 large-offset-6 column">
                         <label>Username</label>
-                        <input type="text" name="fName" id="fName">
+                        <input type="text" name="username" id="username">
                     </div>
                     <div class="large-6 large-offset-6 column">
                         <label>Password</label>
