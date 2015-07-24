@@ -13,12 +13,14 @@ function post(){
     hr.onreadystatechange = function(){
         if(hr.readyState == 4 && hr.status == 200){
             var return_data = hr.responseText;
-            document.getElementById("status").innerHTML = returnLink =  return_data ;
+            returnLink =  return_data ;
         }
     };
     hr.send(vars);
     if(!returnLink.charAt(returnLink.length)=='?'){
         window.location.replace(returnLink);
+    }else{
+        document.getElementById("status").innerHTML = returnLink;
     }
 
 }
