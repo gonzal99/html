@@ -17,9 +17,9 @@ function post(){
     };
     hr.send(vars);
     document.getElementById("status").innerHTML = returnLink;
-    if (parseInt(returnLink) == 0) {
+    /*if (parseInt(returnLink) == 0) {
         document.getElementById("status").innerHTML = "please try again";
     } else {
         window.location.replace("success.php");
-    }
+    }*/
 }
