@@ -13,6 +13,9 @@ function post(){
     hr.onreadystatechange = function(){
         if(hr.readyState == 4 && hr.status == 200){
             returnLink = hr.responseText;
+            if(parseInt(returnLink)==1){
+                document.getElementById("status").innerHTML = returnLink;
+            }
         }
     };
     hr.send(vars);
