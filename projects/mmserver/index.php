@@ -64,18 +64,19 @@
                         <div class="large-4 large-offset-4 column">
                             <button type="button" class="button" onclick="post();">Submit</button>
                         </div>
-                        <div class="large-12 column text-center">
-                            <label id="status"></label>
-                        </div>
+                    </div>
                 </form>
+                <div class="large-12 column text-center">
+                    <label id="status"></label>
+                </div>
             </div>
-    </div>
-    <div class="row" id="nreg" style="display:none">
 
+            <div class="row" id="nreg" style="display:none">
+
+            </div>
+        </section>
+        <a class="exit-off-canvas"></a>
     </div>
-    </section>
-    <a class="exit-off-canvas"></a>
-</div>
 </div>
 
 
