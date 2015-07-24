@@ -45,7 +45,7 @@
                     <button id="no">No</button>
                 </div>
             </div>
-            <div class="row panel" id="reg" style="display:none">
+            <div class="row panel callout" id="reg" style="display:none">
                 <form name="loginform">
                     <div class="row">
                         <div class="large-6 column">
