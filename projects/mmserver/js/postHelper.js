@@ -7,7 +7,7 @@ function post(){
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     var vars = "username="+username+"&password="+password;
-    var returnLink = "";
+    var returnLink;
     hr.open("POST",url,true);
     hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     hr.onreadystatechange = function(){
