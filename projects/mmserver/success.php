@@ -18,7 +18,7 @@
 <?php
  echo $_SESSION['username'];
 ?>
-<button onclick="<?php session_destroy();?>">Logout</button>
+<button onclick="<?php session_destroy(); header("Location: index.php"); ?>">Logout</button>
 <script src="js/foundation.min.js"></script>
 <script>
     $(document).foundation();
