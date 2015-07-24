@@ -18,7 +18,7 @@
 <?php
  echo $_SESSION['username'];
 ?>
-<button><a href="logout.php">Logout</a></button>
+<button><a href="logout.php" class="button">Logout</a></button>
 <script src="js/foundation.min.js"></script>
 <script>
     $(document).foundation();
