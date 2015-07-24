@@ -49,7 +49,7 @@
                 <form name="loginform">
                     <div class="row">
                         <div class="large-6 column">
-                            <label style="color: black !important;>Username</label>
+                            <label style="color: black !important;">Username</label>
                             <input type="text" name="username" id="username">
                         </div>
                     </div>
