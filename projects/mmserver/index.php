@@ -43,9 +43,9 @@
                 }
                 ?>
                 <?php
-                if($username!=null){
+                if(isset($_SESSION['username'])){
                     echo "<li><label>Account</label></li>
-                <li><a href=\"logout.php\"></a></li>";
+                <li><a href=\"logout.php\">Logout</a></li>";
                 }
                 ?>
 
