@@ -56,6 +56,11 @@
                     </div>
                     <div class="large-offset-4 large-4 large-offset-4 column">
                         <button type="button" class="button" onclick="post();">Submit</button>
+                        <?php
+                            if(isset($_SESSION['username'])){
+                                header("Location: success.php");
+                            }
+                        ?>
                     </div>
                     <div class="large-12 column text-center">
                         <label id="status"></label>

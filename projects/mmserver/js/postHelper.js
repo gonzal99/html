@@ -13,14 +13,9 @@ function post(){
     hr.onreadystatechange = function(){
         if(hr.readyState == 4 && hr.status == 200){
             var return_data = hr.responseText;
-            returnLink =  return_data ;
+            document.getElementById("status").innerHTML = returnLink =  return_data ;
         }
     };
     hr.send(vars);
-    if(!returnLink.charAt(returnLink.length)=='?'){
-        window.location.replace(returnLink);
-    }else{
-        document.getElementById("status").innerHTML = returnLink;
-    }
-
+    document.getElementById("status").innerHTML = "please wait...";
 }
