@@ -33,6 +33,7 @@
         <section class="main-section">
             <br>
             <br>
+
             <div class="row panel" align="center" id="question">
                 <div class="large-12 column">
                     <p>Are you already registered?</p>
@@ -44,30 +45,37 @@
                     <button id="no">No</button>
                 </div>
             </div>
-            <div class="row" id="reg" style="display:none">
+            <div class="row panel" id="reg" style="display:none">
                 <form name="loginform">
-                    <div class="large-12 large-push-6 column">
-                        <label>Username</label>
-                        <input type="text" name="username" id="username">
+                    <div class="row">
+                        <div class="large-6 column">
+                            <label>Username</label>
+                            <input type="text" name="username" id="username">
+                        </div>
                     </div>
-                    <div class="large-12 column">
-                        <label>Password</label>
-                        <input type="password" name="password" id="password">
+                    <div class="row">
+                        <div class="large-12 column">
+                            <label>Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
                     </div>
-                    <div class="large-4 large-offset-4 column">
-                        <button type="button" class="button" onclick="post();">Submit</button>
-                    </div>
-                    <div class="large-12 column text-center">
-                        <label id="status"></label>
-                    </div>
+
+                    <div class="row">
+                        <div class="large-4 large-offset-4 column">
+                            <button type="button" class="button" onclick="post();">Submit</button>
+                        </div>
+                        <div class="large-12 column text-center">
+                            <label id="status"></label>
+                        </div>
                 </form>
             </div>
-            <div class="row" id="nreg" style="display:none">
-
-            </div>
-        </section>
-        <a class="exit-off-canvas"></a>
     </div>
+    <div class="row" id="nreg" style="display:none">
+
+    </div>
+    </section>
+    <a class="exit-off-canvas"></a>
+</div>
 </div>
 
 
