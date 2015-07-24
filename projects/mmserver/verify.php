@@ -16,7 +16,6 @@ $hashedPassword = hash("sha512",$password);
 if($userData[3]==$hashedPassword){
     echo "Please wait...";
     $_SESSION['username']=$username;
-    echo $_SESSION['username'];
 }else{
     echo "Please try again!";
     echo " ".$password." ";

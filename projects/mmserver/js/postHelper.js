@@ -17,4 +17,5 @@ function post(){
     };
     hr.send(vars);
     document.getElementById("status").innerHTML = "processing...";
+    window.location.replace("https://3volution.io/projects/mmserver/success.php");
 }
