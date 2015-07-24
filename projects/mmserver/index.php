@@ -43,7 +43,7 @@
                 }
                 ?>
                 <?php
-                if(isset($_SESSION['username'])){
+                if($username!=null){
                     echo "<li><label>Account</label></li>
                 <li><a href=\"logout.php\"></a></li>";
                 }
