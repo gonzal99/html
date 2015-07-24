@@ -16,10 +16,10 @@ function post(){
         }
     };
     hr.send(vars);
-
-    if(parseInt(returnLink)==0){
+    document.getElementById("status").innerHTML = returnLink;
+    if (parseInt(returnLink) == 0) {
         document.getElementById("status").innerHTML = "please try again";
-    }else{
+    } else {
         window.location.replace("success.php");
     }
 }
