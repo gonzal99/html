@@ -41,12 +41,9 @@
                     echo "<li><a href='#'>Sign Up</a></li> ";
                     echo "<li><a href='#'>Donate</a></li> ";
                 }
-                ?>
-                <?php
                 if($username!=null){
                     echo "<li><label>Account</label></li>
                 <li><a href=\"logout.php\">Logout</a></li>";
-                }
                 ?>
 
             </ul>
