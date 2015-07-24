@@ -12,10 +12,14 @@ function post(){
     hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     hr.onreadystatechange = function(){
         if(hr.readyState == 4 && hr.status == 200){
-            var return_data = hr.responseText;
-            document.getElementById("status").innerHTML = returnLink =  return_data ;
+            returnLink = hr.responseText;
         }
     };
     hr.send(vars);
-    document.getElementById("status").innerHTML = "please wait...";
+
+    if(parseInt(returnLink)==0){
+        document.getElementById("status").innerHTML = "please try again";
+    }else{
+        window.location.replace("success.php");
+    }
 }
