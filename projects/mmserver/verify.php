@@ -16,4 +16,5 @@ if($userData[3]==$hashedPassword){
     header("Location: success.php");
 }else{
     echo "Please try again!";
+    echo $hashedPassword;
 }
