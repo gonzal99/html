@@ -6,3 +6,4 @@
  * Time: 3:08 PM
  */
 session_destroy();
+header("Location: index,php");
