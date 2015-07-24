@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="large-12 column">
+                        <div class="large-6 column">
                             <label>Password</label>
                             <input type="password" name="password" id="password">
                         </div>
