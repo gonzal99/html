@@ -5,4 +5,4 @@
  * Date: 7/27/2015
  * Time: 10:01 AM
  */
-phpinfo();
+echo isset($_SERVER['https']);
