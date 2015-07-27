@@ -53,10 +53,13 @@ if (!isset($_SERVER['HTTPS'])) {
             <br>
             <br>
             <?php
-            echo $_SESSION['username'];
-            echo session_status();
+            if(isset($_SESSION['username'])){
+                echo "<div class=\"row panel\" align=\"center\" id=\"question\" style=\"display:none\">";
+            }else{
+                echo "<div class=\"row panel\" align=\"center\" id=\"question\">";
+            }
             ?>
-            <div class="row panel" align="center" id="question">
+
                 <div class="large-12 column">
                     <p>Are you already registered?</p>
                 </div>
