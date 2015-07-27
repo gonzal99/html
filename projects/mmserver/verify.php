@@ -15,6 +15,7 @@ $userData = mysqli_fetch_array($result);
 $hashedPassword = hash("sha512",$password);
 if($userData[3]==$hashedPassword){
     $_SESSION['username']=$username;
+    $_SESSION['isPayed']=$userData[4];
     echo '1';
 }else{
     echo '0';

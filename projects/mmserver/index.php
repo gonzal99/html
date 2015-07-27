@@ -33,13 +33,7 @@ if (!isset($_SERVER['HTTPS'])) {
                 <?php
                 $link = mysqli_connect('localhost', 'public', 'XZmMSa7fZHfR5a8C', 'mmserver') or die("error " . mysqli_error($link));
                 $username = $_SESSION['username'];
-                $user_status = 0;
-                if ($username != null) {
-                    $query = "SELECT * FROM clients WHERE username='$username'";
-                    $result = $link->query($query) or die("bad data");
-                    $userData = mysqli_fetch_array($result);
-                    $user_status = $userData[4];
-                }
+                $user_status = $_SESSION['isPayed'];
                 echo "<li><a href='#'>Donate</a></li> ";
                 if ($user_status == 1) {
                     echo "<li><a href='#'>Media Request</a></li> ";
