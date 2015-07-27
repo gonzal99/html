@@ -39,7 +39,6 @@ if (!isset($_SERVER['HTTPS'])) {
                     echo "<li><a href='#'>Media Request</a></li> ";
                 } else {
                     echo "<li><a href='#'>Sign Up</a></li> ";
-                    echo "<li><a href='#'>Donate</a></li> ";
                 }
                 if (isset($_SESSION['username'])) {
                     echo "<li><label>Account</label></li>
@@ -53,7 +52,9 @@ if (!isset($_SERVER['HTTPS'])) {
         <section class="main-section">
             <br>
             <br>
-
+            <?php
+            echo $_SESSION['username'];
+            ?>
             <div class="row panel" align="center" id="question">
                 <div class="large-12 column">
                     <p>Are you already registered?</p>
