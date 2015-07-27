@@ -1,5 +1,5 @@
 <?php
-if(isset($_SERVER['HTTPS'])){
+if(!isset($_SERVER['HTTPS'])){
     header("Location: https://3volution.io");
 }
 ?>
