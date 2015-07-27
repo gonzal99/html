@@ -16,7 +16,7 @@ if (!isset($_SERVER['HTTPS'])) {
     <script src="js/displayHelper.js"></script>
     <script src="js/postHelper.js"></script>
 </head>
-<body style="min-height: 100%;">
+<body style="min-height: 100% !important;">
 <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
         <nav class="tab-bar">
