@@ -17,7 +17,7 @@ if (!isset($_SERVER['HTTPS'])) {
     <script src="js/postHelper.js"></script>
 </head>
 <body>
-<div class="off-canvas-wrap fillPage" data-offcanvas>
+<div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
         <nav class="tab-bar">
             <section class="left-small">
