@@ -1,3 +1,6 @@
+<?php
+header("Location: https://3volution.io");
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
