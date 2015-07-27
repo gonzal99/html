@@ -41,7 +41,7 @@ if (!isset($_SERVER['HTTPS'])) {
                     echo "<li><a href='#'>Sign Up</a></li> ";
                     echo "<li><a href='#'>Donate</a></li> ";
                 }
-                if ($username != null) {
+                if (isset($_SESSION['username'])) {
                     echo "<li><label>Account</label></li>
                 <li><a href=\"logout.php\">Logout</a></li>";
                 }
