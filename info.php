@@ -5,4 +5,4 @@
  * Date: 7/27/2015
  * Time: 10:01 AM
  */
-echo isset($_SERVER['https']);
+echo $_SERVER['https'] != null;
