@@ -54,6 +54,7 @@ if (!isset($_SERVER['HTTPS'])) {
             <br>
             <?php
             echo $_SESSION['username'];
+            echo session_status();
             ?>
             <div class="row panel" align="center" id="question">
                 <div class="large-12 column">
