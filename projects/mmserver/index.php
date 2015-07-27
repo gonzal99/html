@@ -56,7 +56,7 @@ if (!isset($_SERVER['HTTPS'])) {
             if(isset($_SESSION['username'])){
                 echo "<div class=\"row panel\" align=\"center\" id=\"question\" style=\"display:none\">";
             }else{
-                echo "<div class=\"row panel\" align=\"center\" id=\"question\">";
+                echo "<div class=\"row panel fillPage\" align=\"center\" id=\"question\">";
             }
             ?>
 
