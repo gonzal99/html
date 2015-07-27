@@ -1,3 +1,8 @@
+<?php
+if(!isset($_SERVER['HTTPS'])){
+    header("Location: https://3volution.io/projects/");
+}
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 <head>

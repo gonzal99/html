@@ -1,5 +1,8 @@
 <?php
-    session_start();
+session_start();
+if (!isset($_SERVER['HTTPS'])) {
+    header("Location: https://3volution.io/projects/mmserver/index.php");
+}
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -28,23 +31,23 @@
             <ul class="off-canvas-list">
                 <li><label>Menu</label></li>
                 <?php
-                $link = mysqli_connect('localhost','public','XZmMSa7fZHfR5a8C','mmserver') or die("error ". mysqli_error($link));
+                $link = mysqli_connect('localhost', 'public', 'XZmMSa7fZHfR5a8C', 'mmserver') or die("error " . mysqli_error($link));
                 $username = $_SESSION['username'];
                 $user_status = 0;
-                if($username != null){
+                if ($username != null) {
                     $query = "SELECT * FROM clients WHERE username='$username'";
                     $result = $link->query($query) or die("bad data");
                     $userData = mysqli_fetch_array($result);
                     $user_status = $userData[4];
                 }
                 echo "<li><a href='#'>Donate</a></li> ";
-                if($user_status == 1){
+                if ($user_status == 1) {
                     echo "<li><a href='#'>Media Request</a></li> ";
-                }else{
+                } else {
                     echo "<li><a href='#'>Sign Up</a></li> ";
                     echo "<li><a href='#'>Donate</a></li> ";
                 }
-                if($username!=null) {
+                if ($username != null) {
                     echo "<li><label>Account</label></li>
                 <li><a href=\"logout.php\">Logout</a></li>";
                 }
@@ -94,9 +97,9 @@
                 </div>
             </div>
 
-            <div class="row" id="nreg" style="display:none">
+            <div class=" row" id="nreg" style="display:none">
 
-            </div>
+                </div>
         </section>
         <a class="exit-off-canvas"></a>
     </div>
