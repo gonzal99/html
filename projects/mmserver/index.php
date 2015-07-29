@@ -34,7 +34,7 @@ if (!isset($_SERVER['HTTPS'])) {
                 $link = mysqli_connect('localhost', 'public', 'XZmMSa7fZHfR5a8C', 'mmserver') or die("error " . mysqli_error($link));
                 $username = $_SESSION['username'];
                 $user_status = $_SESSION['isPayed'];
-                echo "<li><a href='#'>Donate</a></li> ";
+                echo "<li><a href='index.php?page=donate'>Donate</a></li> ";
                 if ($user_status == 1) {
                     echo "<li><a href='#'>Media Request</a></li> ";
                 } else {
@@ -98,6 +98,13 @@ if (!isset($_SERVER['HTTPS'])) {
 
             <div class=" row" id="nreg" style="display:none">
 
+                </div>
+                <div class="row">
+                    <?php
+                    if($_GET['page']=="donate"){
+                        include "php/donate.php";
+                    }
+                    ?>
                 </div>
         </section>
         <a class="exit-off-canvas"></a>
