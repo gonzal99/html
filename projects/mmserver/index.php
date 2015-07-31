@@ -96,7 +96,7 @@ if (!isset($_SERVER['HTTPS'])) {
                 </div>
             </div>
 
-            <div class=" row" id="nreg" style="display:none">
+            <div class=" id="nreg" style="display:none">
 
         </div>
     </div>
