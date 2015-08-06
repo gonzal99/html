@@ -10,13 +10,12 @@ session_start();
 <div class="row panel" align="center">
     <ul class="pricing-table">
         <div class="row">
-            <div class="large-12 column">
+            <div class="large-6 column">
                 <li class="title">Monthly</li>
                 <li class="price">$1.99</li>
             </div>
-        </div>
-        <div class="row">
-            <div class="large-12 column">
+
+            <div class="large-6 column">
                 <li class="title">Yearly</li>
                 <li class="price">$19.99</li>
                 <li class="description">Save $3.99 by subscribing for a year!</li>
