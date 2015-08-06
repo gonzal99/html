@@ -87,7 +87,7 @@ if (!isset($_SERVER['HTTPS'])) {
 
             <div class="row">
                 <div class="large-4 large-offset-4 column">
-                    <button type="button" class="button" onclick="post();">Submit</button>
+                    <button type="button" class="button" autofocus onclick="post();">Submit</button>
                 </div>
             </div>
         </form>
