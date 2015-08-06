@@ -18,7 +18,7 @@ session_start();
             <div class="large-6 column">
                 <li class="title">Yearly</li>
                 <li class="price">$19.99</li>
-                <li class="description">Save $3.99 by subscribing for a year!</li>
+                <li class="description"><strong>Save $3.99 by subscribing for a year!</strong></li>
             </div>
         </div>
     </ul>
