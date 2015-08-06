@@ -19,9 +19,12 @@ session_start();
     <input type="hidden" name="currency_code" value="USD">
     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    
+</form>
+
+<form method=post action="https://www.paypal.com/cgi-bin/webscr">
     <input type="hidden" name="cmd" value="_notify-synch">
     <input type="hidden" name="tx" value="TransactionID">
     <input type="hidden" name="at" value="z8-n-Tom0hWOgDacp5_buC8HiBqkD4x5prUQ9U2RVyWD5SIBXOsIJVBpGcK">
     <input type="submit" value="PDT">
 </form>
-
